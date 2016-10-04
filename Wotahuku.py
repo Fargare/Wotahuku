@@ -139,8 +139,8 @@ class animation(object):
         
         # %%%%%%%%%%%%%%%%%%%%%%%%%%%%
         cordinated_pairs,comment, weather_str = Managing_csv.recommend_cordinate(clothes)
-        
-        #cordinated_pairs = [["P9090242.JPG","P9090249.JPG"],["P9090231.JPG","P9090251.JPG"]]
+        #cordinated_pairs = [[]]
+        #cordinated_pairs = [["P9090257.JPG","P9090249.JPG"],["P9090234.JPG","P9090251.JPG"],["P9090264.JPG","P9090253.JPG"],["P9090268.JPG","P9090254.JPG"],["P9090262.JPG","P9090250.JPG"]]
         print cordinated_pairs
         now_selected = 0
         now_focus = 2
@@ -252,7 +252,7 @@ class animation(object):
             dt = datetime.now()
             if dt.second%2 == 0:
                 #self.text = self.canvas.create_text(293,63,text=":",font=("Eraser",40),fill = "black",tag='item')
-                self.text = self.canvas.create_text(305,35,text=":",font=("Eraser",35),fill = "white",tag='item')
+                self.text = self.canvas.create_text(318,35,text=":",font=("Eraser",35),fill = "white",tag='item')
 
             today_comment = "今日は"+weather_str+"、"+comment
             self.text = self.canvas.create_text(240,75,text=today_comment,font=("Sawarabi Gothic",14),fill = "white",tag='item')

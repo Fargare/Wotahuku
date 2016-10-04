@@ -1606,9 +1606,9 @@ def RecommendColor():
     searchOb_uv5 = re.search(u"きわめて強い", today_uv.decode("utf-8"))
 
     # 紫外線によって色に補正をかける
-    if searchOb_uv2 or searchOb_uv3:
+    if searchOb_uv4:
         lucky_color = "black"
-    elif searchOb_uv4 or searchOb_uv5:
+    elif searchOb_uv5:
         lucky_color = "yellow"
     else:
         pass
